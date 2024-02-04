@@ -1,6 +1,6 @@
-G-mapping Readme
+# G-mapping-Readme
 
-Introduction
+# Introduction
 
 G-mapping is a ROS-compatible mapping tool designed for robotic applications. The following steps outline the setup process for utilizing G-mapping with an RPLidar sensor.
 Prerequisites
@@ -34,13 +34,13 @@ bash
 
     cd ~/richard/src/rplidar_ros/launch/
 
-Run the fake_odom_pub.py script:
+Run the fake_odom_pub.py script to publish the fake odometry node from lidar: <--only use when your using lidar as for odometry data-->
 
 bash
 
     rosrun rplidar_ros fake_odom_pub.py
 
-rovide a static transform using the rosrun tf command:
+To provide a static transform using the rosrun tf command:
 
 bash
 
