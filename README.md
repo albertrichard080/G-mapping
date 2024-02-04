@@ -1,4 +1,5 @@
-#G-mapping Readme
+G-mapping Readme
+
 Introduction
 
 G-mapping is a ROS-compatible mapping tool designed for robotic applications. The following steps outline the setup process for utilizing G-mapping with an RPLidar sensor.
