@@ -27,25 +27,28 @@ bash
     roslaunch rplidar.launch
 
 Ensure the RPLidar initializes successfully and note the assigned serial port.
-# Launching G-mapping
 
-Open a new terminal and navigate to the ROS workspace directory:
-
-bash
-
-    cd ~/richard/src/rplidar_ros/launch/
+# Initializing fake odom
 
 Run the fake_odom_pub.py script to publish the fake odometry node from lidar: <--only use when your using lidar as for odometry data-->
 
 bash
 
-    rosrun rplidar_ros fake_odom_pub.py
+    rosrun fake_odom_pub.py
 
 To provide a static transform using the rosrun tf command:
 
 bash
 
     rosrun tf static_transform_publisher 0 0 0 0 0 0 odom base_link 80
+    
+# Launching G-mapping
+
+Open a new terminal and navigate to the ROS workspace directory:
+
+bash
+
+    cd ~/richard/src/G_MAPPING
 
 Finally, launch G-mapping using the appropriate launch file, for instance:
 
@@ -54,6 +57,7 @@ bash
     roslaunch gmapping_map.launch
 
 # Launching Map Saver
+
 To save the map run the following command:
 
 bash
